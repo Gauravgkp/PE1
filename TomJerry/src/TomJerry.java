@@ -16,10 +16,16 @@ import java.util.Scanner;
  * @author Gaurav Singh
  */
 public class TomJerry {
+
+    /*This fucntion checks whether the input number is odd or even and in 20 to 30 range. */
     public static void oddEven(int number) {
+
+	/* Checks the input is valid and in range 20 to 30 */
 	if(number < 30 && number > 20){
 	  System.out.println("Wrong input. Please enter between 30 and 20");
 	}
+	
+	/* Checks if number is even or odd. */
         if (number % 2 == 0) {
             if (number < 30 && number > 20) {
                 System.out.println("Jerry");
@@ -30,9 +36,12 @@ public class TomJerry {
             }
         }
     }
+
+	/* This is main function. It reads user input and call oddEven function. */
         public static void main (String[]args){
             System.out.println("Enter any number between 20 and 30");
             Scanner scan = new Scanner(System.in);
+	    /* Read input from the user. */
             int number = scan.nextInt();
             oddEven(number);
         }
